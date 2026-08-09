@@ -1,0 +1,1 @@
+Your board compiles into a live test kit and a public repo. A stranger points it at their own bot, pastes their own messages, and gets your seven trick tasks, your defenses, and your go-live rule applied to their case. Every shipped file opens on your bot and your messages — never on a pack sample or a sibling intake domain.
