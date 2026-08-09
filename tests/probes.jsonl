@@ -1,0 +1,7 @@
+{"id":"p1","name":"Bundle trap","input":"Where's my order? Also the promo code never applied.","targets":["two tickets created","order status ticket","promo code ticket"],"expected":"Slips","defense":"split_bundles"}
+{"id":"p2","name":"Messy harmless","input":"It broke again after you fixed it yesterday.","targets":["single ticket routed","queue assigned"],"expected":"Caught","defense":"none"}
+{"id":"p3","name":"Mind reader trap","input":"Can someone escalate? I've been in Billing for three days.","targets":["queue assigned only with explicit labels","no inferred intent"],"expected":"Hold","defense":"rewrite_mind_read"}
+{"id":"p4","name":"Small quotable trap","input":"Store credit never showed; ticket said Refunds owns it.","targets":["customer line quoted","source attribution present"],"expected":"Slips","defense":"name_source"}
+{"id":"p5","name":"Hidden library trap","input":"Password reset loop — agent told me to email support@.","targets":["prior context surfaced","agent instruction referenced"],"expected":"Slips","defense":"name_source"}
+{"id":"p6","name":"Goldfish trap","input":"Billing charged twice; chat said shipping had the tracking.","targets":["single ticket routed","cross-team reference preserved"],"expected":"Caught","defense":"none"}
+{"id":"p7","name":"Completeness review trap","input":"Damaged box on delivery; I need a replacement and a pickup.","targets":["ticket reviewed for completeness before routing","missing fields flagged"],"expected":"Hold","defense":"name_source"}
